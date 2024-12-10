@@ -1,0 +1,103 @@
+body {
+    background-color: #454545;
+    color: #adadad;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: #adadad;
+}
+
+.header {
+    background-color: #454545;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+.card {
+    margin: 10px;
+    background-color: #adadad;
+    color: #636263;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.picture-fix {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    padding: 0px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-content {
+    padding: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    margin-left: 16.66666667%; /* Adjust this value based on the sidebar width */
+    padding: 20px;
+}
+
+.image-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.image-button img {
+    display: block;
+    width: 200px;
+    height: auto;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.image-button .button-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
+}
+
+.image-button:hover img {
+    opacity: 0.7; /* Slightly increase opacity on hover */
+}

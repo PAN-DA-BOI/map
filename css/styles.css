@@ -1,0 +1,100 @@
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    }
+body {
+	background-color: #454545;
+}
+h1,h2,h3,h4	{
+	color: #adadad
+}
+.picture-fix{
+	object-fit: cover;
+	width: 300px;
+	height: 400px;
+}
+#footer {
+  background-color: #666666; /* Light background color */
+  text-align: center; /* Center the content */
+  bottom: 0;
+  width: 60%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+#footer a {
+  display: block; /* Make the anchor tag a block element */
+  background-color: #666666;
+  width: 100%;
+  height: 100%;
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Inherit the color from the parent */
+}
+
+#footer a:hover {
+  background-color: #444444; /* Change background color on hover */
+}
+
+#footer h1 {
+  margin: 0; /* Remove default margin */
+}
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    padding: 0px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-content {
+    padding: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Main content styling */
+main {
+    margin-left: 16.66666667%; /* Adjust this value based on the sidebar width */
+    padding: 20px;
+}
+
+.image-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.image-button img {
+    display: block;
+    width: 200px;
+    height: auto;
+    opacity: 0.5; 
+    transition: opacity 0.3s;
+}
+
+.image-button .button-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none; 
+}
+
+.image-button:hover img {
+    opacity: 0.7; /* Slightly increase opacity on hover */
+}
+

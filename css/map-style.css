@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #343a40;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #454545;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 50px); /* Adjusted to account for the header */
+}
+
+.side-panel {
+    width: 200px;
+    background-color: #343a40;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.main-part {
+    flex: 7;
+    overflow-y: auto;
+}
+
+.add-part {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.location-button:hover {
+    background-color: #e0e0e0;
+}
+
+#map {
+    flex: 1;
+    height: 100%;
+}
+
+.sidebar {
+    width: 300px; /* Increased width for better visibility */
+    background-color: #343a40;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.file-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.file-list li {
+    margin-bottom: 10px;
+}
+
+.file-list li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.file-list li a:hover {
+    text-decoration: underline;
+}
